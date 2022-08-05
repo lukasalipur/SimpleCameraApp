@@ -11,6 +11,11 @@
 		A66FA820289D5CC400690A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA81F289D5CC400690A48 /* ContentView.swift */; };
 		A66FA822289D5CC600690A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66FA821289D5CC600690A48 /* Assets.xcassets */; };
 		A66FA825289D5CC600690A48 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66FA824289D5CC600690A48 /* Preview Assets.xcassets */; };
+		A66FA82C289D5CDF00690A48 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA82B289D5CDF00690A48 /* CameraView.swift */; };
+		A66FA82E289D5CEB00690A48 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA82D289D5CEB00690A48 /* CameraModel.swift */; };
+		A66FA830289D5CF900690A48 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA82F289D5CF800690A48 /* CameraPreview.swift */; };
+		A66FA834289D62B800690A48 /* CameraLivePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA833289D62B800690A48 /* CameraLivePreview.swift */; };
+		A66FA836289D63F600690A48 /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA835289D63F600690A48 /* VideoPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		A66FA81F289D5CC400690A48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A66FA821289D5CC600690A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66FA824289D5CC600690A48 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A66FA82B289D5CDF00690A48 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A66FA82D289D5CEB00690A48 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		A66FA82F289D5CF800690A48 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		A66FA833289D62B800690A48 /* CameraLivePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraLivePreview.swift; sourceTree = "<group>"; };
+		A66FA835289D63F600690A48 /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				A66FA81D289D5CC400690A48 /* CameraAppApp.swift */,
 				A66FA81F289D5CC400690A48 /* ContentView.swift */,
+				A66FA82B289D5CDF00690A48 /* CameraView.swift */,
+				A66FA835289D63F600690A48 /* VideoPreview.swift */,
+				A66FA82D289D5CEB00690A48 /* CameraModel.swift */,
+				A66FA833289D62B800690A48 /* CameraLivePreview.swift */,
+				A66FA82F289D5CF800690A48 /* CameraPreview.swift */,
 				A66FA821289D5CC600690A48 /* Assets.xcassets */,
 				A66FA823289D5CC600690A48 /* Preview Content */,
 			);
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66FA830289D5CF900690A48 /* CameraPreview.swift in Sources */,
+				A66FA82C289D5CDF00690A48 /* CameraView.swift in Sources */,
 				A66FA820289D5CC400690A48 /* ContentView.swift in Sources */,
+				A66FA834289D62B800690A48 /* CameraLivePreview.swift in Sources */,
+				A66FA82E289D5CEB00690A48 /* CameraModel.swift in Sources */,
+				A66FA836289D63F600690A48 /* VideoPreview.swift in Sources */,
 				A66FA81E289D5CC400690A48 /* CameraAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,8 +289,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 437XH2568Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "CameraApp Wants To Use Media Library";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We want to use your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,8 +322,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CameraApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 437XH2568Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "CameraApp Wants To Use Media Library";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We want to use your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
